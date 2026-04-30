@@ -1,4 +1,4 @@
-{% set version = "0.3.0" %}
+{% set version = "0.3.1" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/a/anemoi-transform/anemoi_transform-{{ version }}.tar.gz
-  sha256: 5531431824bfd354572806d76ca9e4207167b3bdcd305b94e646c8786fab5173
+  sha256: 48897bcd70ac19eab856c2d6cc8be8e67f1d67be5d825a0082a2f43eb180f2dc
 
 build:
   entry_points:
