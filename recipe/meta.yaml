@@ -14,7 +14,7 @@ build:
     - anemoi-transform = anemoi.transform.__main__:main
   noarch: python
   script: "{{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation"
-  number: 0
+  number: 1
 
 requirements:
   host:
@@ -24,14 +24,15 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - anemoi-utils >=0.5.1
+    - anemoi-utils >=0.5.14
     - cfunits
     - earthkit-data >=0.12.4,<1
-    - earthkit-geo >=0.3
-    - earthkit-meteo >=0.4.1
-    - earthkit-regrid >=0.4
+    - earthkit-geo >=0.3,<1
+    - earthkit-meteo >=0.4.1,<1
+    - earthkit-regrid >=0.4,<1
     - healpy
     - pandas <3
+    - pyproj <3.8
 
 test:
   imports:
